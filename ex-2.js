@@ -374,5 +374,9 @@ const bills = [
 ];
 
 // Start coding here
+function sortMember(member) {
+  return member.member != null;
+}
 
-const newBills;
+const newBills = bills.filter(sortMember);
+console.log(newBills);
