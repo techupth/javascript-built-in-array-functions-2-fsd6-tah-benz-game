@@ -374,4 +374,12 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+function memberName(acc, cur) {
+  if (cur.member != null) {
+    acc.push(cur.member.name);
+  }
+  return acc;
+}
+
+const billMembers = bills.reduce(memberName, []);
+console.log(billMembers);
