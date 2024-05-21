@@ -374,4 +374,18 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+const billMembers = [];
+
+function mem(item1) {
+  console.log(item1);
+  return item1.member !== null;
+}
+
+let mem2 = bills.filter(mem);
+console.log(mem2);
+
+let mem3 = mem2.map(function (item2) {
+  return item2.member.name;
+});
+
+console.log(mem3);

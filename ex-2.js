@@ -375,4 +375,21 @@ const bills = [
 
 // Start coding here
 
-const newBills;
+const newBills = 0;
+
+function Notnull(item1) {
+  console.log(item1);
+  return item1.member !== null;
+}
+
+let Nonull = bills.filter(Notnull);
+
+console.log(Nonull);
+
+//for (let i = 0; i = bills.length; i++) {
+// if (bills[i] !== "null") {
+//   Notnull = Notnull + bills[i];
+// }
+//}
+
+console.log(Notnull);
